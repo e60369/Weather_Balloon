@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B041CC3A1F8C41F7003C5FB1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B041CC391F8C41F7003C5FB1 /* main.cpp */; };
+		B041CC3A1F8C41F7003C5FB1 /* MURPHY_P2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B041CC391F8C41F7003C5FB1 /* MURPHY_P2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		B041CC361F8C41F7003C5FB1 /* Weather_Balloon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Weather_Balloon; sourceTree = BUILT_PRODUCTS_DIR; };
-		B041CC391F8C41F7003C5FB1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B041CC391F8C41F7003C5FB1 /* MURPHY_P2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MURPHY_P2.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		B041CC381F8C41F7003C5FB1 /* Weather_Balloon */ = {
 			isa = PBXGroup;
 			children = (
-				B041CC391F8C41F7003C5FB1 /* main.cpp */,
+				B041CC391F8C41F7003C5FB1 /* MURPHY_P2.cpp */,
 			);
 			path = Weather_Balloon;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B041CC3A1F8C41F7003C5FB1 /* main.cpp in Sources */,
+				B041CC3A1F8C41F7003C5FB1 /* MURPHY_P2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
