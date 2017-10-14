@@ -74,7 +74,6 @@ int main()
     float t_init,t_final,t_incr,total_time;
     float WB=0;
     
-    
     cout << "----------------------------------------------------" << endl;
     cout << "\tRich MURPHY" << endl;
     cout << "\tSolution for Project #2" << endl;
@@ -95,16 +94,14 @@ int main()
         cout << "NOT PROPER DURATION. Observation period must be between 5 and 24 hours." << endl;
         cout << "Enter the parameters again." << endl;
         }
-        else
-            {
-            cout << endl;
-            mymenu();
-            cin >> WB;
-            cout << endl;
-            }
     } while (t_final - t_init <5 || t_final - t_init >24);
     
-
+    do
+    {
+        cout << endl;
+        mymenu();
+        cin >> WB;
+        
     if (WB == 1)
         {
         ofstream data1("Murphy_WB1.txt");
@@ -115,8 +112,7 @@ int main()
                     {
                     data1 << total_time << "\t" << setw(10) << myAltitude(total_time, WB)<< "\t" << setw(5)<< myVelocity(total_time, WB) << endl;
                     }
-        clr_scrn();
-        }
+            }
     
             else if (WB == 2)
                     {
@@ -128,7 +124,6 @@ int main()
                                 {
                                     data2 << total_time << "\t" << setw(10) << myAltitude(total_time, WB)<< "\t" << setw(5)<< myVelocity(total_time, WB) << endl;
                                 }
-                    clr_scrn();
                     }
     
                     else if (WB == 3)
@@ -141,7 +136,6 @@ int main()
                                         {
                                         data3 << total_time << "\t" << setw(10) << myAltitude(total_time, WB)<< "\t" << setw(5)<<   myVelocity(total_time, WB) << endl;
                                         }
-                            clr_scrn();
                             }
     
                             else if (WB == 4)
@@ -154,9 +148,10 @@ int main()
     
                                     else if (WB != 4)
                                         {
-                                        cout << "Error, please select from only the menu items above." << endl;
-                                        mymenu();
+                                        cout << "Error, please select from only the menu items below." << endl;
                                         }
+            } while (WB !=4);
+    
 return 0;
     
 }
